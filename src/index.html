@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="index.js" defer></script>
+  <title>Todo List</title>
+</head>
+<body>
+  <div id="app">
+    <aside>
+      <h2>Projects</h2>
+      <div id="projectList"></div>
+
+      <form id="projectForm">
+        <input id="projectName" type="text" placeholder="New project" required />
+        <button type="submit">Add Project</button>
+      </form>
+    </aside>
+
+    <main>
+      <h2 id="currentProjectTitle">Todos</h2>
+
+      <div id="todoList"></div>
+
+      <h3>Add Todo</h3>
+      <form id="todoForm">
+        <input id="title" type="text" placeholder="Title" required />
+        <input id="description" type="text" placeholder="Description" required />
+        <input id="dueDate" type="date" required />
+
+        <select id="priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <button type="submit">Add Todo</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
